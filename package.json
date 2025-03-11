@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "description": "Diálogo Positivo",
+  "scripts": {
+    "start": "hugo server",
+    "build": "hugo -v --gc --minify"
+  },
+  "author": "Jogajunto <dev@jogajunto.co>",
+  "license": "ISC",
+  "browserslist": "defaults",
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "cssnano": "^6.1.2",
+    "cssnano-preset-advanced": "^6.1.2",
+    "hugo-bin": "^0.113.0",
+    "micromodal": "^0.4.10",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "postcss-combine-media-query": "^1.0.1",
+    "postcss-import": "^16.1.0",
+    "postcss-preset-env": "^9.5.2",
+    "prettier": "^2.8.8",
+    "prettier-plugin-go-template": "^0.0.13"
+  }
+}

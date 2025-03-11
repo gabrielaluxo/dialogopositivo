@@ -1,0 +1,9 @@
+# Site settings
+baseURL: 'https://dialogopositivo.com.br'
+title: 'Diálogo Positivo'
+defaultContentLanguage: pt-br
+
+# Build settings
+enableRobotsTXT: yes
+disableHugoGeneratorInject: yes
+disableKinds: ['taxonomy']
