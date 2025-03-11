@@ -1,0 +1,65 @@
+{{ $hiddenClass := "" }}
+
+{{ if eq .viewPort "desktop" }}
+  {{ $hiddenClass = "hide-at-phone" }}
+{{ else if eq .viewPort "mobile" }}
+  {{ $hiddenClass = "hide-at-tablet hide-at-desktop" }}
+{{ end }}
+
+
+<div class="book-animation stack {{ $hiddenClass }}" style="--gap: 1.5rem" data-book="{{ .viewPort }}">
+  <div class="book book--desktop" data-book="cover" data-book-direction="forward">
+    <div class="book__page" data-book-page>
+      <div class="book__page__front">
+        <div class="book__page__content"></div>
+      </div>
+      <div class="book__page__back">
+        <div class="book__page__content"></div>
+      </div>
+    </div>
+    <div class="book__page" data-book-page>
+      <div class="book__page__front">
+        <div class="book__page__content"></div>
+      </div>
+      <div class="book__page__back">
+        <div class="book__page__content"></div>
+      </div>
+    </div>
+    <div class="book__page" data-book-page>
+      <div class="book__page__front">
+        <div class="book__page__content"></div>
+      </div>
+      <div class="book__page__back">
+        <div class="book__page__content"></div>
+      </div>
+    </div>
+    <div class="book__page" data-book-page>
+      <div class="book__page__front">
+        <div class="book__page__content"></div>
+      </div>
+      <div class="book__page__back">
+        <div class="book__page__content"></div>
+      </div>
+    </div>
+    <div class="book__page" data-book-page>
+      <div class="book__page__front">
+        <div class="book__page__content"></div>
+      </div>
+      <div class="book__page__back">
+        <div class="book__page__content">
+          <h2 class="headline">Baixe o material completo no formulário abaixo!</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="buttons buttons--center">
+    <button class="button button--white button--small" data-book-button="prev" title="Anterior">
+      {{ partial "svg.html" (dict "viewBox" "0 0 19 19" "src" "/icons/left-circle.svg") }}
+      Anterior
+    </button>
+    <button class="button button--white button--small" data-book-button="next" title="Próxima">
+      Próximo
+      {{ partial "svg.html" (dict "viewBox" "0 0 19 19" "src" "/icons/right-circle.svg") }}
+    </button>
+  </div>
+</div>

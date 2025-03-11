@@ -1,0 +1,312 @@
+{{ define "main" }}
+  <section class="hero">
+    <div class="container">
+      <div class="grid" style="--gap: 0">
+        <div class="stack">
+          <figure>
+            <a href="/" title="Página principal">
+              {{ partial "svg.html" (dict "viewBox" "0 0 203 32" "src" "/vectors/logo-dialogo-positivo.svg" "class" "hero__brand") }}
+            </a>
+          </figure>
+          <div class="content">
+            <h1 class="headline headline--size-1">O bem-estar da sua família é prioridade</h1>
+          </div>
+          <div class="chat-group" data-chat-animation="chat" style="max-width: 50ch;">
+            <div class="chat-group__item" data-chat-animation-item="mae-e-filho">
+              <img class="chat-group__avatar chat-group__avatar--moss" src="/uploads/chat-mae.webp" alt="Mãe com a filha em seu colo" loading="lazy" width="78" height="78" />
+              <p class="chat-group__bubble chat-group__bubble--moss">
+                <span class="chat-group__bubble__dots" data-chat-animation-content="dots">
+                  <span class="chat-group__bubble__dot"></span>
+                  <span class="chat-group__bubble__dot"></span>
+                  <span class="chat-group__bubble__dot"></span>
+                </span>
+                <span class="chat-group__bubble__message" data-chat-animation-content="message"></span>
+              </p>
+            </div>
+            <div class="chat-group__item" data-chat-animation-item="gabriela-luxo">
+              <img class="chat-group__avatar chat-group__avatar--coral" src="/uploads/chat-gabriela-luxo.webp" alt="Gabriela Luxo" loading="lazy" width="78" height="78" />
+              <p class="chat-group__bubble chat-group__bubble--pink">
+                <span class="chat-group__bubble__dots" data-chat-animation-content="dots">
+                  <span class="chat-group__bubble__dot"></span>
+                  <span class="chat-group__bubble__dot"></span>
+                  <span class="chat-group__bubble__dot"></span>
+                </span>
+                <span class="chat-group__bubble__message" data-chat-animation-content="message"></span>
+              </p>
+            </div>
+            <div class="buttons" data-chat-animation="button">
+              <a href="https://api.whatsapp.com/send?phone=551141169700" class="button button--brand-blue" rel="noopener" target="_blank">Agendar atendimento</a>
+            </div>
+          </div>
+        </div>
+        <div class="content text-center">
+          <svg class="hero__lightbulb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 305 700" role="img" aria-label="Ilustração de uma lâmpada">
+            <path
+              class="hero__lightbulb__path"
+              d="M167.87,543.42l2.38,65.82s.66,16.77,8.4,21.29c4.72,2.76,10.39-1.59,9.18-6.92-.85-3.75-3.91-8.55-12.36-13.4-4.27-2.45-9.12-3.71-14.04-3.74-6.85-.04-13.59,1.9-19.3,5.68-4.48,2.97-8.88,7.05-10.25,12.17-1.48,5.49,5.21,9.51,9.34,5.59,3.56-3.38,7.3-10.89,9.48-26.78,0,0,3.52-35.88,.65-55.99-.67-4.66,1.72-9.27,5.99-11.27,2.95-1.38,7.21-2.39,13.35-2.39,9.65,0,15.22,3.42,18.38,6.83,2.19,2.37,3.61,5.34,4.17,8.51,1.18,6.66,6.16,30.84,18.73,47.46,0,0,12.32,17.05,12.32,39.28s-11.24,61.51-65.91,63.88c0,0-59.86,1.08-65.26-62.15,0,0,0-27.84,16.64-42.95,0,0,15.34-14.67,20.31-50.07,0,0,1.95-15.75,19.23-16.4,17.29-.65,25.72,1.94,25.72,1.94,0,0,14.71,3.25,15.89-2.05,1.18-5.29-6.17-7.45-6.17-7.45,0,0-11.12-3.02-21.23,0-10.1,3.02-14.86,3.45-14.86,3.45,0,0-10.8,2.37-12.53-3.02-1.73-5.4,10.8-5.83,10.8-5.83h11.68c3.24,0,6.48,.19,9.7,.58,6.72,.82,19.59,1.7,20.54-3.38,1.3-6.91-10.59-7.12-10.59-7.12h-16.01s-11.65,.22-17.91,5.18c0,0-6.27,3.67-8.21-2.16-1.95-5.83,14.59-10.7,14.59-10.7,0,0,9.05-2.36,18.95-1.07,4.01,.52,7.8,2.06,11.17,4.3,1.54,1.03,3.61,1.82,5.43,.57,1.58-1.09,.49-2.72-1.16-4.17-2.12-1.87-4.76-3.05-7.55-3.51-4.79-.79-13.87-3.3-13.55-11.1l1.3-75.54s1.3-26.11,11.89-50.5c10.59-24.39,12.32-66.04,12.32-66.04,0,0-2.81-56.54-16.42-82.44,0,0-14.69-49.42-54.24-51.15-39.55-1.73-51.22,45.54-51.22,85.03,0,0,.22,75.1,24.42,116.54,0,0,21.39,44.22,58.67,41.54,37.28-2.69,54.35-36.57,54.35-36.57,0,0,16.86-24.39,15.34-49.64-1.51-25.25-13.61-47.7-45.16-33.45,0,0-22.26,11.65-42.14,33.02-19.88,21.37-32.63,31.51-51.86,31.51S7.95,304.52,1.04,246.25c-6.92-58.27,60.08-102.51,100.05-112.01,0,0,61.59-23.74,144.14-3.02,0,0,56.19,15.54,58.78,78.99,2.59,63.45-111.07,7.12-111.07,7.12l-63.97-28.92s-32.63-22.44-53.81-10.14c0,0-41.06,30.86,12.75,139.42,0,0,14.91,30.21,29.82,25.47,14.91-4.75,19.45-15.83,32.96-52.8,0,0,25.61-73.23,65.15-72.37,39.55,.86,28.31,70.79,28.31,70.79,0,0-17.07,80.28-64.83-.86l-34.14-58.92s-6.91-21.8-40.63-21.8-67.64,32.59-66.77,69.49c.86,36.9,29.39,36.04,29.39,36.04,0,0,19.23-.22,39.55-13.81,20.31-13.6,84.28-48.56,112.16-49.64,0,0,48.62,.22,62.89,81.15,0,0,6.05,67.33-36.09,70.35,0,0-31.12,2.81-25.28-128.62,0,0,16.64-172.22-105.24-187.11,0,0-55.97-5.4-54.03,54.6,1.32,40.89,37.58,56.52,60.53,62.32,8.55,2.16,17.37,3.11,26.19,2.82,26.92-.89,115.41,2.86,107.34,91.54,0,0-3.89,59.78-63.53,63.02-59.64,3.24-112.59-39.93-119.94-101.87,0,0-7.56-96.9,100.92-118.7,0,0,66.99-16.62,83.2,64.96,0,0,23.77,132.94-43.65,157.11-67.42,24.17-46.25-193.59-46.25-193.59L165.06,0"
+              style="fill: none; stroke: #34509f; stroke-miterlimit: 10; stroke-width: 2px;" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dialogo-e-a-melhor-forma section">
+    <div class="container container--sm">
+      <div class="content text-center">
+        <h2 class="headline headline--size-2">
+          O diálogo é a
+          <strong class="color-brand-blue-1">melhor forma</strong>
+          de comunicação e resolução de conflitos
+        </h2>
+        <p>Oriento pais a lidarem da melhor forma com as situações e desafios do dia a dia. Escuto as necessidades de cada família e ofereço ferramentas e abordagens práticas, que podem ser usadas no cotidiano para fortalecer um diálogo positivo e contribuir com o desenvolvimento saudável das crianças.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="dra-gabriela-luxo section bg-brand-blue-1">
+    <div class="container">
+      <div class="grid grid--reverse">
+        <div class="stack">
+          <div class="content content--sm">
+            <h2 class="headline headline--size-2 color-white">Dra. Gabriela Luxo</h2>
+            <p class="headline headline--size-4 color-white">CRP 06/96928</p>
+          </div>
+          <hr class="hide-at-phone" />
+          <div class="content">
+            <p>Psicóloga, Psicopedagoga, Mestre e Doutora em Distúrbios do Desenvolvimento pela Universidade Presbiteriana Mackenzie. Pós-graduada em Terapia Cognitivo - Comportamental pela PUC-RS e pós-graduada em Psicologia Positiva também pela PUC-RS. Educadora Parental certificada pela Positive Discipline Association. Há mais de 15 anos atuo na área clínica e educacional, sempre aprimorando os meus estudos e pesquisas. No meu doutorado aprofundei conhecimentos científicos sobre família, ou seja, pesquisei o quanto os pais desenvolvem e interferem no potencial cognitivo de seus filhos e a partir dele nasceu o Diálogo Positivo.</p>
+          </div>
+        </div>
+        <div class="stack">
+          <picture>
+            <source media="(min-width: 580px)" srcset="/uploads/dra-gabriela-luxo.webp, /uploads/dra-gabriela-luxo_2x.webp 2x" width="846" height="766" />
+            <img src="/uploads/dra-gabriela-luxo-mobile.webp" alt="Dra. Gabriela Luxo" loading="lazy" width="480" height="706" />
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="orientacao-de-pais">
+    <div class="passando-por-momento-dificil section">
+      <div class="stack stack--lg">
+        <div class="container container--xs">
+          <div class="content text-center-desktop">
+            <h2 class="overline color-brand-wine-1">Orientação de pais</h2>
+            <h3 class="headline headline--size-2">
+              Você está passando por algum
+              <strong class="color-wine-1">momento difícil</strong>
+              com o seu filho?
+            </h3>
+          </div>
+        </div>
+        <div class="container">
+          <ul class="grid">
+            <li class="content content--md text-center">
+              {{ partial "svg.html" (dict "viewBox" "0 0 136 135" "src" "/uploads/orientacao-de-pais-icon-1.svg") }}
+              <p class="headline headline--size-4">Dificuldade em lidar com frustrações</p>
+            </li>
+            <li class="content content--md text-center">
+              {{ partial "svg.html" (dict "viewBox" "0 0 136 135" "src" "/uploads/orientacao-de-pais-icon-2.svg") }}
+              <p class="headline headline--size-4">Momentos intensos de desobediência</p>
+            </li>
+            <li class="content content--md text-center">
+              {{ partial "svg.html" (dict "viewBox" "0 0 136 135" "src" "/uploads/orientacao-de-pais-icon-3.svg") }}
+              <p class="headline headline--size-4">Birras constantes</p>
+            </li>
+            <li class="content content--md text-center">
+              {{ partial "svg.html" (dict "viewBox" "0 0 136 135" "src" "/uploads/orientacao-de-pais-icon-4.svg") }}
+              <p class="headline headline--size-4">Dificuldades para lidar com as cobranças do dia a dia</p>
+            </li>
+          </ul>
+        </div>
+        <div class="container container--sm">
+          <div class="content text-center">
+            <p>Você nota que tudo isso está causando um afastamento entre vocês, além de uma culpa por não conseguir ajudar da melhor forma e, principalmente, a insegurança e o medo que tudo isso causa no processo de educação?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="meu-objetivo-na-orientacao section">
+      <div class="container">
+        <div class="grid">
+          <div class="content">
+            <h3 class="headline headline--size-3">O meu objetivo na orientação de pais é te ajudar justamente nisso. Vou te ensinar a:</h3>
+            <ul class="list list--check">
+              <li>Dialogar de forma eficaz;</li>
+              <li>Ter filhos que cooperam e obedecem;</li>
+              <li>Estabelecer regras e limites.</li>
+            </ul>
+            <p>Tudo de forma gentil e respeitosa. Quero que você tenha mais qualidade nos momentos diários com os seus filhos e com você mesma(o).</p>
+            <p>Nossos encontros serão on-line e individuais, com a possibilidade de participação de seu parceiro(a) também. Os atendimentos são para pais e cuidadores de crianças de 1 a 16 anos de idade. Frequência e quantidade de sessões dependerão da sua queixa e demanda.</p>
+            <div class="buttons">
+              <a href="https://api.whatsapp.com/send?phone=551141169700" class="button button--brand-blue" rel="noopener" target="_blank">Agendar atendimento</a>
+            </div>
+          </div>
+          <div class="content">
+            <picture>
+              <source media="(min-width: 768px)" srcset="/uploads/orientacao-de-pais-illustration.svg" width="2839" height="866" />
+              <img src="/uploads/orientacao-de-pais-illustration-mobile.svg" alt="Pai, mãe e filho de mãos dadas" width="502" height="486" loading="lazy" />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ebook section">
+    <div class="container container--sm">
+      <div class="stack stack--lg">
+        <div class="content text-center-desktop">
+          <h2 class="overline color-brand-blue-1">E-book</h2>
+          <h3 class="headline headline--size-2"><strong class="color-brand-blue-1">Mãe</strong>, você vai conseguir. <strong class="color-brand-blue-1">Pai</strong>, você vai sobreviver!</h3>
+          <p>Eu sei que no processo de educação surgem muitas dúvidas e o diálogo acaba sendo transformado em sermão e ameaças, deixando de lado momentos de reflexão e aprendizagem. É justamente isso que eu quero resgatar.</p>
+          <p>O meu objetivo com esse e-book é orientar pais e educadores sobre as melhores formas de educar as crianças e como desenvolver um relacionamento de qualidade entre ambos. Eu destaco os comportamentos que são importantes no processo de educação e os que devem ser evitados, além de outros conselhos valiosos.</p>
+        </div>
+        {{ partial "book.html" (dict "viewPort" "desktop") }}
+        {{ partial "book.html" (dict "viewPort" "mobile") }}
+        <div class="content content--sm text-center">
+          <p>Baixe o material completo!</p>
+          <a class="button button--brand-blue button--small" href="/ebooks/como-faco-para-o-meu-filho-me-obedecer-dialogo-positivo.pdf" target="_blank">Baixar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="imprensa section">
+    <div class="stack stack--lg">
+      <div class="container container--sm">
+        <div class="content text-center-desktop">
+          <h2 class="overline color-blue-1">Imprensa</h2>
+          <h3 class="headline headline--size-2">Diálogo Positivo na mídia</h3>
+        </div>
+      </div>
+      <div class="container">
+        <div class="box">
+          <div class="grid" style="--gap: 0">
+            <picture>
+              <img src="/uploads/imprensa.webp" srcset="/uploads/imprensa_2x.webp 2x" alt="Dra. Gabriela Luxo na sorrindo na capa da matéria" loading="lazy" width="571" height="500" />
+            </picture>
+            <div class="content">
+              {{ partial "svg.html" (dict "viewBox" "0 0 360 64" "src" "/vectors/logo-terra-money-flash.svg") }}
+              <p><a class="link" href="https://moneyflash.com.br/psicologa-pioneira-em-orientacao-de-pais-dra-gabriela-luxo-recebe-destaque-em-sua-area-de-atuacao/" target="_blank" rel="noopener">Psicóloga pioneira em orientação de pais, Dra. Gabriela Luxo recebe destaque em sua área de atuação</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <ul class="press">
+          <li>
+            <a href="https://revistacrescer.globo.com/Educacao-Comportamento/noticia/2021/09/medo-e-mudancas-de-comportamento-das-criancas-na-pandemia.html" aria-label="Acessar matéria da Globo.com" target="_blank" rel="noopener">
+              {{ partial "svg.html" (dict "viewBox" "0 0 129 64" "src" "/vectors/logo-globo.svg") }}
+            </a>
+          </li>
+          <li>
+            <a href="https://www.estadao.com.br/cultura/porchat-se-divorciou-porque-ele-nao-quer-filhos-mas-ex-quer-como-casais-devem-lidar-com-isso/" aria-label="Acessar matéria Estadão" target="_blank" rel="noopener">
+              {{ partial "svg.html" (dict "viewBox" "0 0 143 64" "src" "/vectors/logo-estadao.svg") }}
+            </a>
+          </li>
+          <li>
+            <a href="https://anamaria.uol.com.br/noticias/familiafilhos/meu-filho-esta-sofrendo-bullying-especialista-explica-o-que-e-e-como-ele-pode-afetar-vida-das-criancas.phtml " aria-label="Acessar matéria Uol" target="_blank" rel="noopener">
+              {{ partial "svg.html" (dict "viewBox" "0 0 94 64" "src" "/vectors/logo-uol.svg") }}
+            </a>
+          </li>
+          <li>
+            <a href="https://record.r7.com/hoje-em-dia/videos/cyberbullying-aumenta-na-pandemia-e-escolas-colocam-o-tema-em-discussao-nas-aulas-02072023/" aria-label="Acessar matéria R7" target="_blank" rel="noopener">
+              {{ partial "svg.html" (dict "viewBox" "0 0 64 64" "src" "/vectors/logo-r7.svg") }}
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/fjRM_OWJPuw" aria-label="Acessar matéria Joven Pan" target="_blank" rel="noopener">
+              {{ partial "svg.html" (dict "viewBox" "0 0 64 64" "src" "/vectors/logo-jp.svg") }}
+            </a>
+          </li>
+          <li>
+            <a href="https://epopnaweb.com.br/dra-gabriela-luxo-explica-o-que-e-orientacao-de-pais-e-os-beneficios-para-um-lar-mais-saudavel/" aria-label="Acessar matéria Terra" target="_blank" rel="noopener">
+              {{ partial "svg.html" (dict "viewBox" "0 0 127 64" "src" "/vectors/logo-terra.svg") }}
+            </a>
+          </li>
+          <li>
+            <a href="https://istoe.com.br/quadro-de-alice-secco-no-domingao-com-huck-acende-alerta-sobre-exposicao-de-criancas-as-midias/" aria-label="Acessar matéria da ISTOÉ" target="_blank" rel="noopener">
+              {{ partial "svg.html" (dict "viewBox" "0 0 93 64" "src" "/vectors/logo-istoe.svg") }}
+            </a>
+          </li>
+          <li>
+            <a href="https://delas.ig.com.br/filhos/2023-07-18/ticiane-pinheiro-decide-controlar-o-uso-da-internet-da-filha.html" aria-label="Acessar matéria da IG" target="_blank" rel="noopener">
+              {{ partial "svg.html" (dict "viewBox" "0 0 49 64" "src" "/vectors/logo-ig.svg") }}
+            </a>
+          </li>
+          <li>
+            <a href="https://canaltech.com.br/podcast/podcast-canaltech/terapia-remota-segue-como-opcao-importante-mesmo-apos-pandemia-4622/" aria-label="Acessar matéria da CanalTech" target="_blank" rel="noopener">
+              {{ partial "svg.html" (dict "viewBox" "0 0 138 64" "src" "/vectors/logo-canaltech.svg") }}
+            </a>
+          </li>
+          <li>
+            <a href="https://economiasa.com.br/blog/colecao-de-livros-da-psicologa-e-doutora-gabriela-luxo-auxilia-dia-a-dia-de-muitos-pais-educadores-e-terapeutas/" aria-label="Acessar matéria da Revista Economia S/A" target="_blank" rel="noopener">
+              {{ partial "svg.html" (dict "viewBox" "0 0 153 64" "src" "/vectors/logo-revista-economia.svg") }}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section livros-publicados">
+    <div class="container">
+      <div class="grid grid--reverse">
+        <div class="content floated">
+          <img src="/uploads/livros-publicados.webp" srcset="/uploads/livros-publicados_2x.webp 2x" alt="Gabriela Luxo segurando os seus livros" loading="lazy" width="594" height="710" />
+          <h2 class="headline headline--size-2">Livros publicados</h2>
+          <p>Os meus livros possuem narrativas diferentes, mas o principal objetivo é auxiliar as crianças a lidarem com as próprias emoções e com as inúmeras situações desafiadoras do dia a dia, e assim compreenderem a importância de acatar normas e regras, a fim de desenvolverem autoconhecimento para alcançarem autonomia e bem-estar.</p>
+          <p>A cada página há sugestões de atividades sobre como abordar determinados temas, além de dicas para os responsáveis sobre melhores condutas e posturas. É um material que promove a interação entre pais, educadores e/ou terapeutas com as crianças. Os livros abordam conteúdos como: sentimentos, otimismo, forças pessoais, limites, desobediência, problemas, autonomia, erros, medos, mentiras e superação.</p>
+          <p>Irei te auxiliar a fortalecer um diálogo positivo e contribuir para o desenvolvimento saudável das crianças.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="box">
+        <ul class="grid" style="--gapX: 2rem">
+          <li class="content content--md text-center">
+            <img src="/uploads/livro-a-perua-escolar-voadora.webp" alt="Livro A Perua Escolar Voadora" loading="lazy" width="290" height="237" />
+            <p>A Perua Escolar Voadora</p>
+            <div class="buttons buttons--center">
+              <a class="button button--white" href="https://www.sinopsyseditora.com.br/livros/a-perua-escolar-voadora-2050" rel="noopener" target="_blank">Comprar</a>
+            </div>
+          </li>
+          <li class="content content--md text-center">
+            <img src="/uploads/livro-a-mochila-e-suas-mil-coisas.webp" alt="Livro A Mochila e suas Mil Coisas" loading="lazy" width="290" height="237" />
+            <p>A Mochila e suas Mil Coisas</p>
+            <div class="buttons buttons--center">
+              <a class="button button--white" href="https://www.sinopsyseditora.com.br/livros/a-mochila-e-suas-mil-coisas-2732" rel="noopener" target="_blank">Comprar</a>
+            </div>
+          </li>
+          <li class="content content--md text-center">
+            <img src="/uploads/livro-o-pijama-invisivel.webp" alt="Livro O Pijama Invisível" loading="lazy" width="290" height="237" />
+            <p>O Pijama Invisível</p>
+            <div class="buttons buttons--center">
+              <a class="button button--white" href="https://www.sinopsyseditora.com.br/livros/o-pijama-invisivel-3156" rel="noopener" target="_blank">Comprar</a>
+            </div>
+          </li>
+          <li class="content content--md text-center">
+            <img src="/uploads/livro-colecao-completa.webp" alt="Livro Coleção Completa" loading="lazy" width="290" height="237" />
+            <p>Coleção completa</p>
+            <div class="buttons buttons--center">
+              <a class="button button--white" href="https://www.sinopsyseditora.com.br/livros/colecao-dialogo-positivo---3019" rel="noopener" target="_blank">Comprar</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contato">
+    <div class="container container--md">
+      <div class="stack text-center">
+        <h2 class="headline headline--size-2">Transforme o dia a dia da sua família. Dê o primeiro passo com o <strong class="color-brand-blue-1">Diálogo Positivo</strong>.</h2>
+        <div class="buttons buttons--center">
+          <a class="button button--brand-blue" href="https://api.whatsapp.com/send?phone=551141169700" rel="noopener" target="_blank">Agendar atendimento</a>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}
