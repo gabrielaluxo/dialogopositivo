@@ -1,0 +1,55 @@
+.bg-brand-wine-1 {
+  background: var(--brand-wine-1);
+  color: var(--brand-pink-1);
+}
+
+.bg-brand-wine-1 strong {
+  color: var(--brand-pink-1);
+}
+
+/* 
+ */
+
+.bg-brand-pink-3 {
+  background: var(--brand-pink-3);
+  border-style: solid;
+  border-color: var(--brand-wine-2);
+  border-width: 1px 0;
+}
+
+.bg-brand-pink-3 .overline,
+.bg-brand-pink-3 .headline strong {
+  color: var(--brand-wine-1);
+}
+
+.bg-brand-pink {
+  background: var(--brand-pink-3);
+}
+
+/* 
+ */
+
+.bg-brand-pink-1 {
+  background: var(--brand-pink-1);
+  color: var(--black);
+}
+
+/* 
+ */
+
+.bg-brand-blue-1 {
+  background: var(--brand-blue-1);
+  color: var(--brand-blue-3);
+}
+
+.bg-brand-blue-1 .headline {
+  color: var(--brand-pink-2);
+}
+
+.bg-brand-blue-1 .overline {
+  color: var(--white);
+}
+
+.bg-brand-blue-4 {
+  background: var(--brand-blue-4);
+}

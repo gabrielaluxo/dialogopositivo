@@ -1,0 +1,55 @@
+.imprensa .box {
+  border: 1px solid var(--neutral-80);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.imprensa .box .content {
+  padding: 2rem;
+}
+
+.imprensa picture {
+  max-width: none;
+  width: 100%;
+}
+
+.imprensa picture img {
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  object-position: top;
+}
+
+.imprensa a {
+  color: inherit;
+}
+
+.imprensa svg {
+  max-width: 22.5rem;
+}
+
+@media (--tablet), (--desktop) {
+  .imprensa picture {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
+  .imprensa picture img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+  }
+
+  .imprensa a {
+    color: inherit;
+  }
+
+  .imprensa svg {
+    max-width: 22.5rem;
+  }
+
+  .imprensa .box .content {
+    padding: 6rem 3rem;
+  }
+}

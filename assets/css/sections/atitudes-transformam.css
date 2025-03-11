@@ -1,0 +1,14 @@
+.atitudes-transformam {
+  background: var(--brand-wine-1);
+  color: var(--white);
+}
+
+.atitudes-transformam .headline {
+  color: var(--white);
+}
+
+.atitudes-transformam svg {
+  max-width: 31.25rem;
+  margin-left: auto;
+  margin-right: auto;
+}

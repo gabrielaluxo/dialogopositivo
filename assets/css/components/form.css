@@ -1,0 +1,30 @@
+.form {
+  max-width: 26.25rem;
+  margin: auto;
+  width: 100%;
+}
+
+.form fieldset {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.form legend {
+  font-size: 0.875rem;
+  flex-basis: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.form h2 {
+  color: white;
+}
+
+.form .input {
+  background: var(--white);
+  border-radius: 8px;
+  border: 1px solid var(--brand-blue-2);
+  font-size: 0.9rem;
+  padding: 0 1em;
+  width: 100%;
+}

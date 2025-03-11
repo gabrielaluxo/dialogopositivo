@@ -1,0 +1,15 @@
+.icon-with-text {
+  --gap: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+}
+
+.icon-with-text--top {
+  align-items: flex-start;
+}
+
+.icon-with-text svg {
+  max-width: 1.375rem;
+}

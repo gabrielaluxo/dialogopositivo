@@ -1,0 +1,41 @@
+.topbar {
+  background: #730fc3;
+  color: white;
+  padding: 1.5rem;
+}
+
+.topbar p {
+  max-width: 48ch;
+  text-wrap: pretty;
+}
+
+.topbar .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem 4rem;
+}
+
+.topbar .buttons {
+  row-gap: 0.5rem;
+}
+
+@media (--tablet), (--desktop) {
+  .topbar .buttons {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (--phone) {
+  .topbar .flex {
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
+@media (--phone) {
+  .topbar .button {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}

@@ -1,0 +1,18 @@
+.ebook {
+  background: var(--brand-pink-3);
+  border-style: solid;
+  border-color: var(--brand-wine-2);
+  border-width: 1px 0;
+  position: relative;
+}
+
+.ebook .headline--size-2 {
+  max-width: 22ch;
+}
+
+@media (--desktop) {
+  .ebook .headline--size-2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

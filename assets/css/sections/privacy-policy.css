@@ -1,0 +1,131 @@
+.privacy-policy.section {
+  padding-top: 3rem;
+}
+
+@media (--phone), (--tablet) {
+  .privacy-policy.section {
+    padding-bottom: 0;
+  }
+}
+
+.privacy-policy-nav nav {
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.privacy-policy-nav li {
+  font-size: 1rem;
+}
+
+.privacy-policy-nav li + li {
+  margin-top: 1rem;
+}
+
+.privacy-policy-nav li a {
+  display: block;
+  text-decoration: none;
+}
+
+@media (--desktop) {
+  .privacy-policy-nav {
+    position: sticky;
+    top: 4rem;
+    will-change: transform;
+  }
+}
+
+.privacy-policy-content {
+  min-width: 0;
+}
+
+.privacy-policy-content .content > .headline + p {
+  --margin: 1.5rem;
+}
+
+.privacy-policy-content > li + li,
+.privacy-policy-content ol > li + li {
+  padding-top: 2.5rem;
+}
+
+.privacy-policy-content li {
+  word-break: break-word;
+}
+
+.privacy-policy-content ol,
+.privacy-policy-content ol > li {
+  padding-left: 0.75rem;
+}
+
+.privacy-policy-content,
+.privacy-policy-content > li {
+  padding-left: 0;
+}
+
+.privacy-policy-content ol {
+  counter-reset: section;
+}
+
+.privacy-policy-content > li {
+  counter-increment: section;
+}
+
+.privacy-policy-content > li > ol {
+  counter-reset: clause;
+}
+
+.privacy-policy-content > li > ol > li {
+  counter-increment: clause;
+}
+
+.privacy-policy-content > li > ol > li > ol {
+  counter-reset: item;
+}
+
+.privacy-policy-content > li > ol > li > ol > li {
+  counter-increment: item;
+}
+
+.privacy-policy-content h2:before {
+  content: counter(section) '. ';
+}
+
+.privacy-policy-content h3:before {
+  content: counter(section) '.' counter(clause) '. ';
+}
+
+.privacy-policy-content h4:before {
+  content: counter(section) '.' counter(clause) '. ' counter(clause) '. ';
+}
+
+.privacy-policy-content h5:before {
+  content: counter(section) '.' counter(clause) '.' counter(item) '. ';
+}
+
+.privacy-policy-table {
+  min-width: calc(100% + 3rem);
+  position: relative;
+  left: -1.5rem;
+  overflow: auto;
+  padding: 0 1.5rem;
+}
+
+.privacy-policy-table-wrapper {
+  min-width: min-content;
+}
+
+.privacy-policy-table td,
+.privacy-policy-table th {
+  padding: 1em;
+}
+
+.privacy-policy-table tbody td:nth-child(even) {
+  min-width: 15.75rem;
+}
+
+.privacy-policy-table tbody td:nth-child(odd) {
+  min-width: 8.75rem;
+}
+
+.privacy-policy-table tbody tr:nth-child(odd) {
+  background: var(--brand-blue-4);
+}

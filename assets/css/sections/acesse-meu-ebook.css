@@ -1,0 +1,21 @@
+@media (--desktop) {
+  .acesse-meu-ebook::after {
+    content: '';
+    background: url(/uploads/lettering.svg) no-repeat center / contain;
+    position: absolute;
+    width: 16.25rem;
+    height: 47rem;
+    top: 8rem;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    margin: auto;
+    transform: translate(31rem, 0);
+  }
+}
+
+@media (--desktop) and (max-width: 1280px) {
+  .acesse-meu-ebook::after {
+    transform: translate(28rem, 0);
+  }
+}

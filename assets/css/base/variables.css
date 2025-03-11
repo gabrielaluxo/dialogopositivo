@@ -1,0 +1,59 @@
+:root {
+  --brand-wine-1: #a9383d;
+  --brand-wine-2: #d3999b;
+  --brand-wine-3: #edd4d5;
+  --brand-wine-4: #faf3f3;
+  --brand-wine-5: #fefdfd;
+
+  --brand-blue-1: #34509f;
+  --brand-blue-2: #97a5cd;
+  --brand-blue-3: #d3d9ea;
+  --brand-blue-4: #f2f4f9;
+  --c: #fdfefe;
+
+  --brand-moss-1: #bcbe50;
+  --brand-moss-2: #dddda5;
+  --brand-moss-3: #f1f1d9;
+  --brand-moss-4: #fbfbf4;
+  --brand-moss-5: #fefefe;
+
+  --brand-pink-1: #f3bbb6;
+  --brand-pink-2: #f8dcd9;
+  --brand-pink-3: #fcf0ef;
+  --brand-pink-4: #fefbfb;
+  --brand-pink-5: #fffefe;
+
+  --brand-coral-1: #e9555c;
+  --brand-coral-2: #f3a8ab;
+  --brand-coral-3: #fadbdc;
+  --brand-coral-4: #fef4f5;
+  --brand-coral-5: #fffefe;
+
+  --brand-purple: #730fc3;
+  --brand-yellow: #f7c325;
+
+  --white: #ffffff;
+  --neutral-95: #f9f9f9;
+  --neutral-90: #e6e6e6;
+  --neutral-80: #cccccc;
+  --neutral-60: #999999;
+  --neutral-40: #666666;
+  --neutral-20: #323232;
+  --black: #000000;
+
+  --title: #000000;
+  --body: #3f3f3f;
+  --muted: #616161;
+  --page-background: #ffffff;
+  --error: #d40000;
+  --sucess: #3bcd97;
+  --focus-line: #fecead;
+  --border: #6d6d6d;
+
+  --side-spacing: 1.5rem;
+}
+
+@custom-media --phone (width < 48rem);
+@custom-media --tablet (48rem <= width < 65rem);
+@custom-media --desktop (width >= 65rem);
+@custom-media --small-desktop (65rem <= width <= 80rem);

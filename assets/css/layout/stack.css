@@ -1,0 +1,21 @@
+.stack {
+  --gap: 2.5rem;
+
+  display: grid;
+  gap: var(--gap);
+  grid-auto-rows: auto;
+  justify-self: center;
+  width: 100%;
+}
+
+.stack--sm {
+  --gap: 1.5rem;
+}
+
+.stack--lg {
+  --gap: 4rem;
+}
+
+.stack--xl {
+  --gap: 6rem;
+}

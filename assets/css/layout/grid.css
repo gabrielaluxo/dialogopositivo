@@ -1,0 +1,32 @@
+.grid {
+  --gapY: 4rem;
+  --gapX: 4rem;
+  --gap: var(--gapY) var(--gapX);
+  --align: flex-start;
+
+  display: grid;
+  gap: var(--gap);
+  align-items: var(--align);
+  grid-auto-rows: min-content;
+  grid-template-columns: 100%;
+}
+
+@media (--tablet), (--desktop) {
+  .grid {
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+    grid-template-columns: inherit;
+  }
+
+  .grid--reverse {
+    direction: rtl;
+  }
+
+  .grid--reverse > * {
+    direction: ltr;
+  }
+
+  .grid > * {
+    grid-column: var(--column);
+  }
+}

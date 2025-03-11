@@ -1,0 +1,68 @@
+.livros-publicados.section {
+  border-top: 1px solid var(--neutral-90);
+  background: linear-gradient(
+    180deg,
+    var(--neutral-95) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.livros-publicados .box {
+  background: var(--brand-blue-4);
+  border: 1px solid var(--brand-blue-2);
+  border-radius: 0.5rem;
+  padding: 4rem 2rem;
+}
+
+.livros-publicados .box li img {
+  width: 100%;
+  max-width: 11rem;
+}
+
+.livros-publicados .box li p {
+  max-width: 14ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (--desktop) {
+  .livros-publicados .floated {
+    clear: both;
+    max-width: 1090px;
+  }
+
+  .livros-publicados .floated img {
+    float: left;
+    margin-left: -8rem;
+    shape-margin: 4rem;
+    shape-outside: url(/uploads/livros-publicados.webp);
+  }
+}
+
+@media (--phone), (--tablet) {
+  .livros-publicados .floated {
+    display: grid;
+  }
+
+  .livros-publicados .floated img {
+    order: 1;
+    margin-top: 2.5rem;
+    position: relative;
+    transform: translateX(-10%);
+  }
+
+  .livros-publicados .box ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem 1rem;
+  }
+
+  .livros-publicados .box li p {
+    font-size: 1rem;
+  }
+}
+
+@media (--desktop) {
+  .livros-publicados .box ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

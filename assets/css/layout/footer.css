@@ -1,0 +1,19 @@
+.footer {
+  padding: 4rem 1.5rem;
+}
+
+.footer .columns > :first-child {
+  align-self: center;
+}
+
+.footer .brand {
+  max-width: 20rem;
+}
+
+@media (--phone), (--tablet) {
+  .footer,
+  .footer .icon-with-text {
+    text-align: center;
+    justify-content: center;
+  }
+}

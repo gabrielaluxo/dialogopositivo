@@ -1,0 +1,31 @@
+.columns {
+  --gap: 4rem;
+  --align: flex-start;
+
+  display: grid;
+  align-items: var(--align);
+  gap: var(--gap);
+  grid-auto-rows: min-content;
+}
+
+@media (--desktop) {
+  .columns {
+    grid-template-columns: var(--columns-desktop);
+  }
+
+  .columns > * {
+    grid-column: var(--column);
+  }
+}
+
+@media (--tablet) {
+  .columns {
+    grid-template-columns: var(--columns-tablet);
+  }
+}
+
+@media (--phone) {
+  .columns {
+    grid-template-columns: var(--columns-phone);
+  }
+}

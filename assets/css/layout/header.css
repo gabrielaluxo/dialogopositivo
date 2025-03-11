@@ -1,0 +1,15 @@
+.header {
+    padding: 2rem 1.5rem 0;
+}
+
+.header__brand {
+  color: var(--brand-blue-1);
+  max-width: 14.5rem;
+}
+
+@media (--tablet), (--desktop) {
+
+    .header__brand {
+      margin-bottom: 4rem;
+    }
+  }

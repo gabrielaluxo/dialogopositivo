@@ -1,0 +1,39 @@
+.color-brand-blue-1 {
+  color: var(--brand-blue-1);
+}
+
+.color-brand-blue-2 {
+  color: var(--brand-blue-2);
+}
+
+.color-brand-wine-1 {
+  color: var(--brand-wine-1);
+}
+
+.color-brand-wine-2 {
+  color: var(--brand-wine-2);
+}
+
+.color-brand-pink-1 {
+  color: var(--brand-pink-1);
+}
+
+.color-brand-pink-2 {
+  color: var(--brand-pink-2);
+}
+
+.color-purple {
+  color: var(--brand-purple);
+}
+
+.color-black {
+  color: var(--black);
+}
+
+.color-white {
+  color: var(--white);
+}
+
+.color-body {
+  color: var(--body);
+}

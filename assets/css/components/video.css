@@ -1,0 +1,18 @@
+.video {
+  overflow: hidden;
+}
+
+.video iframe {
+  border-radius: 0.5rem;
+  aspect-ratio: 1/1;
+  height: 100%;
+  width: 100%;
+}
+
+@media (--phone) {
+  #curso-metodo-go.modal .video {
+    border-radius: 0;
+    margin-left: -2rem;
+    min-width: calc(100% + 4rem);
+  }
+}

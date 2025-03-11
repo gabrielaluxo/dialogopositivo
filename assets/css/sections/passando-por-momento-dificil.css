@@ -1,0 +1,34 @@
+.passando-por-momento-dificil.section {
+  padding-bottom: 0;
+}
+
+.passando-por-momento-dificil li svg {
+  max-width: 6rem;
+}
+
+.passando-por-momento-dificil li p {
+  max-width: 20ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (--phone), (--tablet) {
+  .passando-por-momento-dificil ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem 1rem;
+  }
+
+  .passando-por-momento-dificil li p {
+    font-size: 1rem;
+  }
+}
+
+@media (--desktop) {
+  .passando-por-momento-dificil ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .passando-por-momento-dificil li svg {
+    max-width: 8.5rem;
+  }
+}

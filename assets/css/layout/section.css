@@ -1,0 +1,17 @@
+.section {
+  padding: 6rem var(--side-spacing);
+}
+
+@media (--tablet), (--desktop) {
+  .section {
+    padding: 8rem var(--side-spacing);
+  }
+}
+
+.section.section--padding-top-0 {
+  padding-top: 0;
+}
+
+.section.section--padding-bottom-0 {
+  padding-bottom: 0;
+}
